@@ -1,4 +1,5 @@
 Learninpairs::Application.routes.draw do
+  get "users/new"
   root "pages#home"
   get "about", to: "pages#about", as: :about
   get "login", to: "pages#login", as: :login
