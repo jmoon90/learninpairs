@@ -1,9 +1,11 @@
 Learninpairs::Application.routes.draw do
-  get "users/new"
+  get "users/controller"
+  resources :users
   root "pages#home"
-  get "about", to: "pages#about", as: :about
-  get "login", to: "pages#login", as: :login
-  get "contact", to: "pages#contact", as: :contact
+  match "/about", to: "pages#about",      via: 'get'
+  match "/signin", to: "pages#signin",    via: 'get'
+  match "/contact", to: "pages#contact",  via: 'get' 
+  match "/signup", to: "pages#signup",    via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

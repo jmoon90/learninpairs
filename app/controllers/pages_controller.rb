@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def login
+  def signin
   end
 
   def contact
