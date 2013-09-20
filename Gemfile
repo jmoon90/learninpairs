@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'bootstrap-will_paginate', '0.0.9'
+gem 'font-awesome-rails'
 gem 'bcrypt-ruby', '3.0.1'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
@@ -16,10 +18,11 @@ group :test do
   gem 'factory_girl_rails', '4.2.1'
 end
 
+# Use SCSS for stylesheets
 gem 'sass-rails', '4.0.0'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.0'
-gem 'jquery-rails', '3.0.4'
+gem 'jquery-rails', '2.2.1'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 
